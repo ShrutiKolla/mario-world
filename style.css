@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Karla:wght@400;800&family=Press+Start+2P&display=swap');
+
 html {
     box-sizing: border-box;
     font-size: 100%;
@@ -5,7 +7,9 @@ html {
     color: white;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -15,9 +19,37 @@ body {
 }
 
 #map {
-    height: 80vh;
+    height: 65vh;
 }
 
 .gm-style-iw-d {
     color: black;
+}
+
+.head {
+    padding: 3rem;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Press Start 2P', cursive;
+    animation-name: jazz;
+    animation-duration: 0.2s;
+    animation-delay: 0.2s;
+    /* animation-iteration-count: 2; */
+}
+
+@keyframes jazz {
+    70% {
+        transform: translate(200px, 0px);
+        color: blue;
+    }
+
+    50% {
+        transform: translate(-200px, 0px);
+        color: red;
+    }
+    60% {
+        transform: translate(100px, 0px);
+        color: green;
+    }
+
 }
